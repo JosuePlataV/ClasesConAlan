@@ -43,6 +43,9 @@
     background: pink; 
     margin: 20px auto;
     position: relative;
+    margin-top: 85px;
+    margin-left: 450px;
+    float: center;
 }
 
 h1 {
@@ -79,11 +82,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-.hero-image {
-  margin-top: 85px;
-  margin-left: 450px;
-  float: center;
-}
 
 .connect {
   color: #6155A6;
