@@ -94,20 +94,47 @@ nav a:hover {
   padding: 100px;
 }
 
-.caja {
-  background-color: #F0F0F0;
-  box-shadow: 0 4px 6px rgba(0, 20, 0, 0.2);
-  padding: 4% 6%;
-  margin: 10px;
-  width: 215px;
-  height: 250px;
-  text-align: center; 
-  margin-top: 130px;
+.cards-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 90px; 
 }
-
-.cards {
-  max-width: 150%;
-  height:fit-content;
+.card {
+  background: #F0F0F0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.card-title {
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+.card-content {
+  font-size: 0.9em;
+  color: #666;
+}
+@media (max-width: 768px) {
+  .cards-section {
+    flex-direction: column;
+  }
 }
 
 .letcon {
@@ -132,36 +159,51 @@ nav a:hover {
   font-weight: bold;
 }
 
-#footer {
-  background-color: #F8F8F8;
-  padding-top: 25px;
-  height: 500px;
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+.footer div {
+  flex: 1;
+  margin: 10px;
+}
+.footer .social-icons {
+  text-align: center;
+}
+.footer .social-icons a {
+  margin: 0 5px;
+}
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer div {
+    flex: none;
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+.footer-bottom {
+  bottom: 100px;
+  width: 100%;
+  text-align: bottom;
+  padding: 10px 0;
 }
 
 .contacto img{
   float: left;
+  margin-right: 5px;
 }
 
-.copyright img{
-  float: left;
+.a-footer{
+  text-decoration: none;
+  color: #303030;
 }
 
-#experience {
-  padding-top: 7%;
-}
 
-.button3 {
-  background-color: #F092CB;
-  border: none;
-  color: white;
-  padding: auto;
-  width: 160px;
-  height: 60px;
-  text-align: center;
-  display: inline-block;
-  font-size: 18px;
-  margin: 4px 2px;
-  margin-top: 20px;
-  border-radius: 40px;
-  font-weight: 600;
-}
+
