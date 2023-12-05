@@ -98,7 +98,7 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 100px;
   gap: 90px; 
 }
 .card {
